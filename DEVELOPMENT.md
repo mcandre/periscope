@@ -38,3 +38,9 @@ $ npm install [-g]
 ```console
 $ npm uninstall [-g]
 ```
+
+# PUBLISH
+
+```console
+$ npm run publish
+```
