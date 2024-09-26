@@ -3,12 +3,14 @@
 # EXAMPLES
 
 ```console
-$ cd example
+$ cd examples
+
+$ cd hello-npm
 
 $ periscope .
-warning: unscoped publication name "hello" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/example/package.json
-warning: unscoped dependency name "express" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/example/package.json
-warning: unscoped dependency name "redis" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/example/package.json
+warning: unscoped publication name "hello-npm" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/examples/hello-npm/package.json
+warning: unscoped dependency name "express" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/examples/hello-npm/package.json
+warning: unscoped dependency name "redis" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/examples/hello-npm/package.json
 ```
 
 See `periscope -h` for more options.
@@ -30,6 +32,10 @@ BSD-2-Clause
 # REQUIREMENTS
 
 * [Node.js](https://nodejs.org/en/) 20.17.0+
+
+## Optional
+
+* [Yarn](https://yarnpkg.com/) 4.5.0+
 
 # CONTRIBUTING
 

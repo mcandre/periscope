@@ -1,6 +1,6 @@
 {
-    "name": "hello",
-    "description": "Hello World",
+    "name": "hello-npm",
+    "description": "Hello NPM",
     "version": "0.0.1",
     "dependencies": {
         "@nestjs/core": "^10.4.4",
