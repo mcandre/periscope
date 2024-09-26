@@ -11,6 +11,8 @@ warning: unscoped dependency name "express" vulnerable to spoofing: /Users/andre
 warning: unscoped dependency name "redis" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/example/package.json
 ```
 
+See `periscope -h` for more options.
+
 # ABOUT
 
 NPM provides [scoped](https://docs.npmjs.com/cli/v9/using-npm/scope) package names using an at sign (`@`) prefix. Scoped names are safer than classical names. For example, anyone can publish packages with names similar to `redis`, but only authorized members of the scope are allowed to publish packages with the `@redis/` namespace.

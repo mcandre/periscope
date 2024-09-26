@@ -1,25 +1,61 @@
 #!/usr/bin/env node
 'use strict';
 
-import PeriscopeScanner from '../lib/periscope.js';
+import { PeriscopeScanner, Version } from '../lib/periscope.js';
+
+import util from 'node:util';
 
 /** usage show a help menu. */
 function usage(program) {
-    console.log(`Usage: ${program} <path> [<path> [<path> ...]]`);
+    console.log(`
+Usage: ${program} [OPTIONS] <path> [<path> [<path> ...]]
+
+--version -v\tShow version
+--help -h\tShow usage menu
+`);
 }
 
-var scanner = new PeriscopeScanner();
+const program = process.argv[1];
+var
+    scanner = new PeriscopeScanner(),
+    argsParsed = {};
 
-const argv = process.argv;
-const program = argv[0];
-const args = argv.slice(1);
-
-if (args.length === 0) {
+try {
+    argsParsed = util.parseArgs({
+        options: {
+            version: {
+                type: 'boolean',
+                short: 'v',
+            },
+            help: {
+                type: 'boolean',
+                short: 'h',
+            },
+        },
+        allowPositionals: true,
+        strict: true,
+    });
+} catch (_) {
     usage(program);
     process.exit(1);
 }
 
-scanner.scanPaths(args);
+if (argsParsed.values.version) {
+    console.log(Version);
+    process.exit(0);
+}
+
+if (argsParsed.values.help) {
+    usage(program);
+    process.exit(0);
+}
+
+if (argsParsed.positionals.length === 0) {
+    usage(program);
+    process.exit(1);
+}
+
+scanner.scanPaths(argsParsed.positionals);
 
 for (const error of scanner.errors) {
     console.error(error);
