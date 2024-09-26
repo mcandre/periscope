@@ -1,11 +1,13 @@
 'use strict';
 
+import packageJSON from '../package.json' with { type: 'json' };
+
 import child_process from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 
 /** Version is semver. */
-export const Version = '0.0.2';
+export const Version = packageJSON.version;
 
 /** Scanner models a scope linter. */
 export class PeriscopeScanner {

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-import { PeriscopeScanner, Version } from '../lib/periscope.js';
+import { PeriscopeScanner, Version } from '../src/periscope.js';
 
 import util from 'node:util';
 
