@@ -42,28 +42,30 @@ export class PeriscopeScanner {
     /** scanPaths checks a list of paths recursively. */
     scanPaths(paths) {
         for (const pth of paths) {
-            this.#scan(path.resolve(pth));
+            this.scan(pth);
         };
     }
 
-    /** scan checks an absolute path recursively. */
-    #scan(pth) {
+    /** scan checks a path recursively. */
+    scan(pth) {
+        const parent = path.dirname(pth);
+
         if (fs.statSync(pth).isDirectory()) {
-            this.#scanDirectory(pth);
+            this.#scanDirectory(parent, pth);
             return;
         }
 
-        this.#scanFile(pth);
+        this.#scanFile(parent, pth);
     }
 
-    /** scanDirectory checks an absolute directory path, non-recursively. */
-    #scanDirectory(pth) {
+    /** scanDirectory checks a parent and directory path, non-recursively. */
+    #scanDirectory(parent, pth) {
         if (this.excludeDirectory(pth)) {
             return;
         }
 
         for (const child of fs.readdirSync(pth, { recursive: true })) {
-            const pth2 = path.join(pth, child);
+            const pth2 = path.relative(parent, path.join(pth, child));
 
             if (this.excludeDirectory(pth2)) {
                 continue;
@@ -77,7 +79,7 @@ export class PeriscopeScanner {
         }
     }
 
-    /** scanFile checks an absolute file path. */
+    /** scanFile checks a given file path. */
     #scanFile(pth) {
         if (this.excludeDirectory(pth)) {
             return;
@@ -91,7 +93,7 @@ export class PeriscopeScanner {
         this.#scanDependencies(pth);
     }
 
-    /** scanPackage checks an absolute file path for an unscoped publication name. */
+    /** scanPackage checks a file path for an unscoped publication name. */
     #scanPackage(pth) {
         const pkg = JSON.parse(fs.readFileSync(pth, 'utf8'));
         this.packageManager = pkg.packageManager;
