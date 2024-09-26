@@ -1,0 +1,19 @@
+---
+name: "Audit"
+on: # yamllint disable-line rule:truthy
+  push:
+  pull_request:
+  schedule:
+  - cron: "0 0 * * 1"
+jobs:
+  Audit:
+    runs-on: "ubuntu-22.04"
+    env:
+      GOPATH: "/home/runner/go"
+    steps:
+    - uses: "actions/checkout@v4"
+    - run: "sudo apt-get update"
+    - run: "sudo apt-get install -y make npm"
+    - run: "npm run audit"
+      env:
+        SNYK_TOKEN: "${{ secrets.SNYK_TOKEN }}"
