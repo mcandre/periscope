@@ -9,6 +9,16 @@ import path from 'node:path';
 /** Version is semver. */
 export const Version = packageJSON.version;
 
+/** EXCLUDE_DIRECTORY_PATTERN matches junk directory parts that are not part of first party code. */
+export const EXCLUDE_DIRECTORY_PATTERN=/^(node_modules|\.git|\.svn)$/;
+
+/** YARN_PACKAGE_MANAGER matches package.json yarn configurations. */
+export const YARN_PACKAGE_MANAGER=/^yarn@.+$/
+
+/** YARN_INFO_PACKAGE captures package names from yarn info NDJSON output. */
+export const YARN_INFO_PACKAGE=/^\"(?<name>.+)@(?<type>npm|workspace):.+\"$/
+
+
 /** Scanner models a scope linter. */
 export class PeriscopeScanner {
     /** constructor creates a new Scanner. */
@@ -196,12 +206,3 @@ export class PeriscopeScanner {
         }
     }
 }
-
-/** EXCLUDE_DIRECTORY_PATTERN matches junk directory parts that are not part of first party code. */
-export const EXCLUDE_DIRECTORY_PATTERN=/^(node_modules|\.git|\.svn)$/;
-
-/** YARN_PACKAGE_MANAGER matches package.json yarn configurations. */
-export const YARN_PACKAGE_MANAGER=/^yarn@.+$/
-
-/** YARN_INFO_PACKAGE captures package names from yarn info NDJSON output. */
-export const YARN_INFO_PACKAGE=/^\"(?<name>.+)@(?<type>npm|workspace):.+\"$/
