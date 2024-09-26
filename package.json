@@ -1,0 +1,22 @@
+{
+    "name": "@mcandre/periscope",
+    "description": "NPM/Yarn dependency scope linter",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mcandre/periscope.git"
+    },
+    "author": "Andrew Pennebaker <n4jm4@pm.me>",
+    "engines": {
+        "node": ">=20.17.0"
+    },
+    "bin": {
+        "periscope": "./bin/periscope"
+    },
+    "scripts": {
+        "audit": "./tasks/audit",
+        "npm-audit": "./tasks/npm-audit",
+        "snyk": "./tasks/snyk"
+    },
+    "type": "module"
+}

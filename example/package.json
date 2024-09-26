@@ -1,0 +1,14 @@
+{
+    "name": "hello",
+    "description": "Hello World",
+    "version": "0.0.1",
+    "dependencies": {
+        "@nestjs/core": "^10.4.4",
+        "express": "^4.21.0"
+    },
+    "devDependencies": {
+        "@redis/client": "^1.6.0",
+        "redis": "^4.7.0"
+    },
+    "type": "module"
+}

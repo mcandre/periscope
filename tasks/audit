@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+
+import npm_audit from './npm-audit';
+import snyk from './snyk';
+
+import process from 'node:process';
+
+function main() {
+    npm_audit();
+    snyk();
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) { main(); }
