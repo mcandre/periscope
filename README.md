@@ -17,6 +17,10 @@ NPM provides [scoped](https://docs.npmjs.com/cli/v9/using-npm/scope) package nam
 
 periscope automates scannign large, complex projects to identify first party and third party code that uses unscoped package names.
 
+# NPM
+
+https://www.npmjs.com/package/@mcandre/periscope
+
 # LICENSE
 
 BSD-2-Clause
