@@ -16,8 +16,8 @@
     "scripts": {
         "audit": "./tasks/audit",
         "npm-audit": "./tasks/npm-audit",
-        "publish": "./tasks/publish",
-        "snyk": "./tasks/snyk"
+        "snyk": "./tasks/snyk",
+        "upload": "./tasks/upload"
     },
     "type": "module"
 }

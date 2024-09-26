@@ -42,5 +42,5 @@ $ npm uninstall [-g]
 # PUBLISH
 
 ```console
-$ npm run publish
+$ npm run upload
 ```
