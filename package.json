@@ -1,7 +1,7 @@
 {
     "name": "@mcandre/periscope",
     "description": "NPM/Yarn dependency scope linter",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "repository": {
         "type": "git",
         "url": "https://github.com/mcandre/periscope.git"
