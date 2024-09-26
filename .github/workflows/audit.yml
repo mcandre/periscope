@@ -13,7 +13,11 @@ jobs:
     steps:
     - uses: "actions/checkout@v4"
     - run: "sudo apt-get update"
-    - run: "sudo apt-get install -y make npm"
+    - run: "sudo apt-get install -y make npm wget"
+    - run: "wget https://downloads.snyk.io/cli/stable/snyk-linux"
+    - run: "cp snyk-linux /bin/snyk"
+    - run: "chmod +x /bin/snyk"
+    - run: "npm install"
     - run: "npm run audit"
       env:
         SNYK_TOKEN: "${{ secrets.SNYK_TOKEN }}"
