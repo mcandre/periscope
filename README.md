@@ -31,6 +31,7 @@ For more information on developing periscope itself, see [DEVELOPMENT.md](DEVELO
 
 # SEE ALSO
 
+* [booty](https://github.com/mcandre/booty), a task runner convention for ECMAScript/JavaScript/Node.js/altJS projects
 * [linters](https://github.com/mcandre/linters), a wiki of common programming language linters and SAST tools
 * [stank](https://github.com/mcandre/stank), a collection of shell script linter utilities
 * [unmake](https://github.com/mcandre/unmake), a linter for makefiles
