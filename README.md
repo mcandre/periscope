@@ -1,4 +1,4 @@
-# periscope: NPM dependency scope linter
+# periscope: NPM/Yarn dependency scope linter
 
 # EXAMPLES
 
