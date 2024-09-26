@@ -19,7 +19,7 @@ See `periscope -h` for more options.
 
 NPM provides [scoped](https://docs.npmjs.com/cli/v9/using-npm/scope) package names using an at sign (`@`) prefix. Scoped names are safer than classical names. For example, anyone can publish packages with names similar to `redis`, but only authorized members of the scope are allowed to publish packages with the `@redis/` namespace.
 
-periscope automates scannign large, complex projects to identify first party and third party code that uses unscoped package names.
+periscope automates scanning large, complex projects to identify first party and third party code that uses unscoped package names.
 
 # NPM
 
