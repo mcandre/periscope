@@ -8,9 +8,9 @@ $ cd examples
 $ cd hello-npm
 
 $ periscope .
-warning: unscoped publication name "hello-npm" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/examples/hello-npm/package.json
-warning: unscoped dependency name "express" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/examples/hello-npm/package.json
-warning: unscoped dependency name "redis" vulnerable to spoofing: /Users/andrew/go/src/github.com/mcandre/periscope/examples/hello-npm/package.json
+warning: unscoped publication name "hello-npm" vulnerable to spoofing: package.json
+warning: unscoped dependency name "express" vulnerable to spoofing: package.json
+warning: unscoped dependency name "redis" vulnerable to spoofing: package.json
 ```
 
 See `periscope -h` for more options.
