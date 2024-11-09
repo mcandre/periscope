@@ -40,6 +40,12 @@ $ npm install [-g]
 $ npm uninstall [-g]
 ```
 
+# TEST
+
+```console
+$ npm test
+```
+
 # PUBLISH
 
 ```console

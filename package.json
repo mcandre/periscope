@@ -15,6 +15,7 @@
         "audit": "./tasks/audit",
         "npm-audit": "./tasks/npm-audit",
         "snyk": "./tasks/snyk",
+        "test": "./tasks/test",
         "upload": "./tasks/upload"
     },
     "type": "module"
