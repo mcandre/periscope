@@ -18,5 +18,8 @@
         "test": "./tasks/test",
         "upload": "./tasks/upload"
     },
-    "type": "module"
+    "type": "module",
+    "dev-dependencies": {
+        "snyk": "*"
+    }
 }

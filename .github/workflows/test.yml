@@ -5,15 +5,15 @@ on: # yamllint disable-line rule:truthy
   pull_request:
   schedule:
   - cron: "0 0 * * 1"
+  workflow_dispatch:
 jobs:
   Test:
     runs-on: "ubuntu-22.04"
     steps:
-    - uses: actions/setup-node@v4
+    - uses: "actions/checkout@v4"
+    - uses: "actions/setup-node@v4"
       with:
         node-version: "20.17.0"
-    - uses: "actions/checkout@v4"
-    - run: "npm install -g"
+    - name: "provision dev tools"
+      run: "npm install"
     - run: "npm test"
-      env:
-        SNYK_TOKEN: "${{ secrets.SNYK_TOKEN }}"
