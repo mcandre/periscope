@@ -3,7 +3,7 @@
     "description": "Hello NPM",
     "version": "0.0.1",
     "dependencies": {
-        "@types/lodash": "^4.17.10",
+        "@types/lodash": "^4.17.12",
         "lodash": "^4.17.21"
     },
     "devDependencies": {
