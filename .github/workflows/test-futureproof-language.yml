@@ -19,6 +19,6 @@ jobs:
     - uses: "actions/setup-node@v4"
       with:
         node-version: "latest"
-    - run: |
-        npm install -g
-        npm test
+    - name: "provision dev tools"
+      run: "npm install -g"
+    - run: "npm test"
