@@ -3,7 +3,6 @@
 # REQUIREMENTS
 
 * [Node.js](https://nodejs.org/en/) 20.17.0+ with `corepack enable`
-* [Snyk](https://snyk.io/)
 * [Yarn](https://yarnpkg.com/) 4.5.0+
 * Install additional dependencies with `npm install -g`
 
@@ -13,22 +12,10 @@ Note: Periodically regenerate `package-lock.json` to account for updates in floa
 
 * [ASDF](https://asdf-vm.com/) 0.14.1 (run `asdf reshim` after provisioning)
 
-# AUDIT: NPM AUDIT + SNYK
+# AUDIT
 
 ```console
 $ npm run audit
-```
-
-## NPM AUDIT
-
-```console
-$ npm audit
-```
-
-## SNYK
-
-```console
-$ npm run snyk
 ```
 
 # INSTALL
