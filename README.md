@@ -21,9 +21,21 @@ NPM provides [scoped](https://docs.npmjs.com/cli/v9/using-npm/scope) package nam
 
 periscope automates scanning large, complex projects to identify first party and third party code that uses unscoped package names.
 
-# NPM
+# INSTALL
 
-https://www.npmjs.com/package/@mcandre/periscope
+## NPM
+
+```sh
+npm install @mcandre/periscope@0.0.5 --save-dev
+```
+
+## Source
+
+```sh
+npm install
+```
+
+For more information on developing periscope itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 # LICENSE
 
@@ -36,10 +48,6 @@ BSD-2-Clause
 ## Optional
 
 * [Yarn](https://yarnpkg.com/) 4.5.0+
-
-# CONTRIBUTING
-
-For more information on developing periscope itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 # SEE ALSO
 

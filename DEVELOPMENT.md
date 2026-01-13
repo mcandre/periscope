@@ -14,30 +14,30 @@ Note: Periodically regenerate `package-lock.json` to account for updates in floa
 
 # AUDIT
 
-```console
-$ npm run audit
+```sh
+npm run audit
 ```
 
 # INSTALL
 
-```console
-$ npm install [-g]
+```sh
+npm install [-g]
 ```
 
 # UNINSTALL
 
-```console
-$ npm uninstall [-g]
+```sh
+npm uninstall [-g]
 ```
 
 # TEST
 
-```console
-$ npm test
+```sh
+npm test
 ```
 
 # PUBLISH
 
-```console
-$ npm run upload
+```sh
+npm run upload
 ```
