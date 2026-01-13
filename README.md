@@ -26,7 +26,7 @@ periscope automates scanning large, complex projects to identify first party and
 ## NPM
 
 ```sh
-npm install @mcandre/periscope@0.0.5 --save-dev
+npm install @mcandre/periscope --save-dev
 ```
 
 ## Source
