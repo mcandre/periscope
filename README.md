@@ -29,7 +29,7 @@ periscope automates scanning large, complex projects to identify first party and
 npm install @mcandre/periscope --save-dev
 ```
 
-## Source
+## Build from Source
 
 ```sh
 npm install
