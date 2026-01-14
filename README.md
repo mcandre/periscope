@@ -1,7 +1,9 @@
 # periscope: NPM/Yarn dependency scope linter
 
+![yellow submarine](periscope.jpg)
+
 [![NPM Downloads](https://img.shields.io/npm/d18m/%40mcandre%2Fperiscope?label=NPM%20downloads)
-](https://www.npmjs.com/package/@mcandre/periscope)
+](https://www.npmjs.com/package/@mcandre/periscope) [![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
 
 # EXAMPLES
 
@@ -43,4 +45,4 @@ BSD-2-Clause
 * [stank](https://github.com/mcandre/stank), a collection of shell script linter utilities
 * [unmake](https://github.com/mcandre/unmake), a linter for makefiles
 
-![yellow submarine](periscope.jpg)
+🤿
