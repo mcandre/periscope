@@ -1,9 +1,9 @@
 # periscope: NPM/Yarn dependency scope linter
 
-![yellow submarine](periscope.jpg)
-
 [![NPM Downloads](https://img.shields.io/npm/d18m/%40mcandre%2Fperiscope?label=NPM%20downloads)
 ](https://www.npmjs.com/package/@mcandre/periscope) [![Yarn](https://img.shields.io/badge/yarn-8A2BE2?logo=yarn)](https://yarnpkg.com/package?q=%40mcandre%2Fperiscope&name=%40mcandre%2Fperiscope) [![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+
+![yellow submarine](periscope.jpg)
 
 # EXAMPLES
 
