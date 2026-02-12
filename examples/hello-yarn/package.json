@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "dependencies": {
         "@types/lodash": "^4.17.10",
-        "lodash": "^4.17.21"
+        "lodash": "^4.17.23"
     },
     "devDependencies": {
         "@redis/client": "^1.6.0",
